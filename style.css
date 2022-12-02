@@ -1,30 +1,85 @@
-.section{
-    background-color: aqua;
-}
-.arrow{
-    padding-left: 280px;  
-}
-
-.wrapper{
-    border-radius: 15px;
-    padding-left: 20px;
-}
-
-.menu {
-    display: inline-block;
-    align-items: center;
-    padding-top: 15px;
-}
-
-ul, li{
-    padding-left: 10px;
-    font-size: 25px;
-    font-weight: 400;
-   
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
-li{
-    padding-left: 10px;
-    align-items: flex-end;
+
+body{
+    overflow-x: hidden;
+    font-family: "Roboto";
 }
+
+.container-fluid{
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(147, 244, 181);
+    overflow-x: hidden;
+   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+   z-index: 2;
+   border-radius: 10px;
+}
+
+.sidebar ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li a{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    color: black;
+    height: 70px;
+    align-items: center;
+}
+
+.sidebar ul li a i{
+    min-width: 20px;
+    font-size: 24px;
+}
+
+.sidebar-heading{
+    font-size: 50px;
+    color: rgb(177, 114, 235);
+    margin-top: 15px ;
+}
+h2{
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.sidebar .title{
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    left: 300px;
+    background: white;
+    
+}
+
+.top-nav {
+    position: fixed;
+    height: 110px;
+    width: calc(100% - 300px);
+    display: grid;
+    grid-template-columns: 10fr 0.4fr 1fr;
+    background: white;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
