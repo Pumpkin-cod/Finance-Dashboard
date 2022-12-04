@@ -9,7 +9,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Finance Dashboard</title>
 
 </head>
@@ -119,7 +119,7 @@
         <div class="main">
             <div class="top-nav">
                 <div class="search">
-                    <input class="fw-bold" type="text" placeholder="seach here" name="search">
+                    <input type="text" placeholder="seach here" name="search">
                     <label for="search"><i class="bi bi-search"></i></label>
                 </div>
                 <div class="nav-list">
@@ -127,24 +127,41 @@
                         <li class="d-flex nav-link">
                             <a class="nav-link active" aria-current="page" href="#">Wallet</a>
                             <a class="nav-link active" aria-current="page" href="#">Invoice</a>
+                            <a class="nav-link active" aria-current="page" href="#">Accounts</a>
                           </li>
                     </ul>
                 </div>
                 <div class="users">
-                    <i class="bi bi-person-fill-add"></i>John Doe
+                    <i class="bi bi-person-fill-add" href="#"></i>John Doe
                 </div>
             </div>
-
+            <div class="cards">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text"></p>
+                          <a href="#" class="btn btn-primary"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text"></p>
+                          <a href="#" class="btn btn-primary"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
     
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-<!-- Code injected by live-server -->
-<script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+</body>
+</html>
