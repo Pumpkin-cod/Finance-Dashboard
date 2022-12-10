@@ -30,6 +30,8 @@ body{
 .sidebar ul li {
     width: 100%;
     list-style: none;
+    position: relative;
+    left: 20px;
 }
 
 .sidebar ul li a{
@@ -39,7 +41,8 @@ body{
     color: black;
     height: 70px;
     align-items: center;
-}
+    padding-left: 10px ;
+ }
 
 .sidebar ul li a i{
     min-width: 20px;
@@ -98,19 +101,20 @@ h2{
 
 .search input{
     width: 70%;
-    height: 40px;
+    height: 30px;
     padding-left: 0px;
     margin-bottom: 5px;
     margin-left: 10px;
     border-radius: 10px;
-    text-align: start;
-    font-size: 20px;
+    /* text-align: start; */
+    text-align: center;
+    font-size: 17px;
 }
 
 .bi-search{
     margin-left: 10px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .nav-list{
@@ -122,27 +126,42 @@ h2{
     margin: 0px 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 50px;
+    padding-left: 10px;
     font-size: 20px;
     font-weight: 500;
     color: rgb(23, 23, 24);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    /* border: black 1px solid; */
 }
 
 .nav-link:hover{
     color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 .users {
-    margin-left: 400px;
-    /* border: black 1px solid; */
-    padding-left: 50px;
-    height: 30px;
+    margin-left: 100px;
+    padding-left: 40px;
+    height: 25px;
     font-size: 19px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     cursor: pointer;
 }
 /* end of navbar */
+
+
+/*side bar */
+.sided {
+    position: relative;
+    right: 20px;
+}
+
+ .sided li:hover{
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+
+
 
 /* start of cards */
 .cards {
